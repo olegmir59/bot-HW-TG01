@@ -18,6 +18,6 @@ class WeatherAPI:
         if response.status_code == 200:
             temp = data['main']['temp']
             description = data['weather'][0]['description']
-            return f"Погода в {CITY}:\nТемпература: {temp}°C\nОписание: {description}"
+            return f"Погода в городе {CITY}:\nТемпература: {temp}°C\nОписание: {description}"
         else:
             return "Не удалось получить данные о погоде"
